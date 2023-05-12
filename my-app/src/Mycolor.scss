@@ -1,0 +1,41 @@
+
+ $black : #090909;
+$greye : #4b5043;
+$blue : #9bc4bc;
+$azzure :#d3ffe9;
+$white : #f1fbfc;
+ 
+
+
+.myBluBg {
+  background-color: $blue;
+}
+
+.myTextAzzure {
+  color: $azzure;
+}
+
+
+.myAzzureBg {
+  background-color: $azzure;
+}
+
+.myTextBlu {
+  color: $blue;
+}
+
+.myBlackBg {
+  background-color: $black !important;
+}
+.myTextBlack{
+  color: $black
+}
+
+.myWhiteBg {
+  background-color: $white !important;
+}
+
+.myTextWhite {
+  color:white;
+}
+
