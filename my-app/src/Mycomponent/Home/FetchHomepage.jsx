@@ -1,5 +1,5 @@
-import { Row, Col, Image } from "react-bootstrap/";
-import url from "../assets/json.json";
+import { Row, Col } from "react-bootstrap/";
+import url from "../../assets/json.json";
 import CardHomep from "./CardHomep";
 
 const FetchHomepage = () => {
@@ -10,7 +10,7 @@ const FetchHomepage = () => {
       <h2 className="myTextWhite d-flex fw-bolder justify-content-center my-3 py-3">
         Le scarpe novita:
       </h2>
-      {url.slice([17]).map((shoes) => {
+      {url.slice([20]).map((shoes) => {
         return (
           <Col
             className=" d-flex align-items-center justify-content-center"
@@ -20,11 +20,11 @@ const FetchHomepage = () => {
           >
             <div class="card fade-in-bottom">
               <div class="imgBx">
-                <img src={shoes.Image} alt="" />
+                <img fluid src={shoes.Img} alt="" />
               </div>
               <div class="contentBx">
                 <h2>{shoes.Name}</h2>
-                <h2>{shoes.Category}</h2>
+                <h5>{shoes.Category}</h5>
                 <div class="size">
                   <h3>Size :</h3>
                   <span>7</span>

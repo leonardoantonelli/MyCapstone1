@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/video/BB_19556b0b-4a29-4092-9824-94b481b38e0a_preview.mp4";
+import video from "../../assets/video/BB_19556b0b-4a29-4092-9824-94b481b38e0a_preview.mp4";
 
 function Video() {
   return (

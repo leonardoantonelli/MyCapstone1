@@ -1,17 +1,17 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./Mycomponent/Myheader";
-import Myheader from "./Mycomponent/Myheader";
-import MyMainHomepage from "./Mycomponent/MyMainHomepage";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./Mycolor.scss";
 import "./Myscss.scss";
-import Video from "./Mycomponent/Video";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Mycomponent/Partial/Myheader";
+import Myheader from "./Mycomponent/Partial/Myheader";
+import MyMainHomepage from "./Mycomponent/Home/MyMainHomepage";
 
 function App() {
   return (
     <>
-      <Myheader></Myheader>
-      <MyMainHomepage></MyMainHomepage>
+      <Myheader />
+      <MyMainHomepage />
     </>
   );
 }

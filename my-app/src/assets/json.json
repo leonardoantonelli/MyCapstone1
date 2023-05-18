@@ -13,7 +13,7 @@
         "Size9": 9,
         "Size10": 10,
         "Size11.5": 11.5,
-        "Img": "../assets/img/Nike Air Force 1 Mid QS.webp",
+        "Img": "img/Nike Air Force 1 Mid QS.webp",
         "Type": "Air Force",
         "ColorTag": "green"
     },
@@ -24,14 +24,14 @@
         "Color": 3,
         "Price": 11956,
         "MRP": 22569,
-        "Tag": "",
+        "Tag":"Promo Exclusion",
         "Size6": 6,
         "Size7": 0,
         "Size8": 8,
         "Size9": 0,
         "Size10": 10,
         "Size11.5": 0,
-        "Img": "/my-app/src/assets/img/Nike Air Force 1 Mid QS.webp",
+        "Img": "img/Nike Air Force 1 Mid React.webp",
         "Type": "Air Force",
         "ColorTag": "white"
     },
@@ -49,7 +49,7 @@
         "Size9": 9,
         "Size10": 0,
         "Size11.5": 11.5,   
-        "Img": "img/Nike Air Max 270.webp",
+        "Img": "img/Nike Air Force 1 07 LV8.webp",
         "Type": "Air Force",
         "ColorTag": "black"
     },
@@ -139,7 +139,7 @@
         "Size9": 0,
         "Size10": 10,
         "Size11.5": 11.5,
-        "Img": "img/Nike Air Max 97 SE.jpg",
+        "Img": "img/Nike Air Max 97 SE 2.jpg",
         "Type": "Air Max",
         "ColorTag": "yellow"
     },
@@ -319,7 +319,7 @@
         "Size9": 9,
         "Size10": 0,
         "Size11.5": 11.5,
-        "Img": "img/Nike Metcon 8.webp",
+        "Img": "img/Nike Waffle Debut.webp",
         "Type": "Nike Dunk",
         "ColorTag": "green"
     },
@@ -358,6 +358,63 @@
         "Img": "img/Nike React Infinity Run Flyknit 3.webp",
         "Type": "Boots",
         "ColorTag": "white"
+    },
+    
+ {
+        "id": 21,
+        "Name": "Nike Dunk 8",
+        "Category": "Men's",
+        "Color": 1,
+        "Price": 45451,
+        "MRP": 52456,
+        "Tag": "Sustainable Materials",
+        "Size6": 0,
+        "Size7": 7,
+        "Size8": 0,
+        "Size9": 9,
+        "Size10": 10,
+        "Size11.5": 11.5,
+        "Img": "img/Nike-React-Infinity-Run-Flyknit-3h.png",
+        "Type": "Boots",
+        "ColorTag": "white"
+    },
+    {
+        "id": 22,
+        "Name": "Nike Pegasus 39",
+        "Category": "Men's",
+        "Color": 3,
+        "Price": 28451,
+        "MRP": 36456,
+        "Tag": "",
+        "Size6": 6,
+        "Size7": 7,
+        "Size8": 0,
+        "Size9": 0,
+        "Size10": 10,
+        "Size11.5": 11.5,
+        "Img": "img/Nike-Pegasus-39-h.png",
+        "Type": "Pegasus",
+        "ColorTag": "orange"
+    },
+     {
+        "id": 23,
+        "Name": "Nike React Infinity Run Flyknit 3",
+        "Category": "Men's",
+        "Color": 1,
+        "Price": 45451,
+        "MRP": 52456,
+        "Tag": "Sustainable Materials",
+        "Size6": 0,
+        "Size7": 7,
+        "Size8": 0,
+        "Size9": 9,
+        "Size10": 10,
+        "Size11.5": 11.5,
+        "Img": "img/Nike-Waffle-Debut-h.png",
+        "Type": "Boots",
+        "ColorTag": "white"
     }
     
+
+   
 ]
