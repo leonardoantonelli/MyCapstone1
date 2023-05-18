@@ -1,6 +1,9 @@
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/adidas logo.png";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import CartIndicator from "./CartIndicator";
+import Cart from "../ShopPage/Cart";
+import MyMainHomepage from "../Home/MyMainHomepage";
 
 function MyNavbar() {
   return (
@@ -25,6 +28,11 @@ function MyNavbar() {
             <h5 className="text-decoration-none myTextWhite"> About </h5>
           </Link>
         </Navbar>{" "}
+        <CartIndicator />
+        <Routes>
+          <Route path="/" element={<MyMainHomepage />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
       </BrowserRouter>
     </>
   );

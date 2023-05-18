@@ -1,16 +1,17 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./Mycolor.scss";
 import "./Myscss.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Mycomponent/Partial/Myheader";
 import Myheader from "./Mycomponent/Partial/Myheader";
 import MyMainHomepage from "./Mycomponent/Home/MyMainHomepage";
+import CartIndicator from "./Mycomponent/Partial/CartIndicator";
 
 function App() {
   return (
     <>
       <Myheader />
+
       <MyMainHomepage />
     </>
   );

@@ -5,11 +5,14 @@ import Shop from "../ShopPage/Shop";
 import logo from "../../assets/adidas logo.png";
 import MyNavbar from "./MyNavbar";
 import MyMainHomepage from "../Home/MyMainHomepage";
+import CartIndicator from "./CartIndicator";
+import Cart from "../ShopPage/Cart";
 
 function Myheader() {
   return (
     <>
       <MyNavbar />
+
       <BrowserRouter className=" ms-auto  text-decoration-none d-flex justify-content-center align-content-center ">
         <Routes>
           <Route path="/" element={<MyMainHomepage />} />
