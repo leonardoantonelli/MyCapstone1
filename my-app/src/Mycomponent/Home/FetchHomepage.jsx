@@ -1,7 +1,7 @@
 import { Row, Col } from "react-bootstrap/";
 import url from "../../assets/json.json";
 import CardHomep from "./CardHomep";
-
+import "../../Mycomponent/Home/scss/CardHomepage.scss";
 const FetchHomepage = () => {
   console.log(url);
   return (
@@ -13,16 +13,16 @@ const FetchHomepage = () => {
       {url.slice([20]).map((shoes) => {
         return (
           <Col
-            className=" d-flex align-items-center justify-content-center"
+            className=" d-flex align-items-center justify-content-center mycontainer"
             xs={12}
             md={4}
             key={shoes.id}
           >
-            <div class="card fade-in-bottom">
-              <div class="imgBx">
-                <img fluid src={shoes.Img} alt="" />
+            <div class="mycard fade-in-bottom">
+              <div class="myimgBx">
+                <img className="myimg" fluid src={shoes.Img} alt="" />
               </div>
-              <div class="contentBx">
+              <div class="mycontentBx">
                 <h2>{shoes.Name}</h2>
                 <h5>{shoes.Category}</h5>
                 <div class="size">
@@ -32,12 +32,7 @@ const FetchHomepage = () => {
                   <span>9</span>
                   <span>10</span>
                 </div>
-                <div class="color">
-                  <h3>Color :</h3>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
+
                 <a href="#">Buy Now</a>
               </div>
             </div>

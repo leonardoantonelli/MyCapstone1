@@ -12,11 +12,10 @@ const CartIndicator = () => {
   return (
     <div className="text-end mt-3 mb-4">
       <Button
-        className="d-inline-flex align-items-center py-2 px-3"
-        variant="primary"
+        className="d-inline-flex align-items-center py-2 px-3 myWhiteBg text-dark border-0 "
         onClick={() => navigate("/cart")}
       >
-        <FaShoppingCart className="text-white" />
+        <FaShoppingCart className="myTextBlack" />
         <span className="ms-2">{cartLength}</span>
       </Button>
     </div>
