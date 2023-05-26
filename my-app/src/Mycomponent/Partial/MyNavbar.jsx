@@ -1,6 +1,7 @@
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/adidas logo.png";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+import { BrowserRouter, Switch, Route, Link, Routes } from "react-router-dom";
 import CartIndicator from "./CartIndicator";
 import Cart from "../ShopPage/Cart";
 import MyMainHomepage from "../Home/MyMainHomepage";
@@ -10,7 +11,6 @@ function MyNavbar() {
   return (
     <>
       <BrowserRouter>
-        {" "}
         <Navbar className="w-100 d-flex w-100 justify-content-between ">
           {" "}
           <Link to="/" className="text-decoration-none">
@@ -32,8 +32,7 @@ function MyNavbar() {
         <hr className="myWhiteBg myTextWhite w-100 my-0 py-0" />
         <Routes>
           <Route path="/" element={<MyMainHomepage />} />
-          <Route path="/Cart" element={<Cart />} />
-          <Route path="/" element={<MyMainHomepage />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
         </Routes>

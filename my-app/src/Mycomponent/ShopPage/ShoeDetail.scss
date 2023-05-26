@@ -1,0 +1,49 @@
+
+ $black : #090909;
+$greye : #4b5043;
+$blue : #9bc4bc;
+$azzure :#d3ffe9;
+$white : #f1fbfc;
+
+.size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px 4px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.size span:hover{
+  background: $black;
+  color: white;
+}
+
+.mybutton, .myfav { 
+     background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+color: $black;
+} 
+
+.mybutton:hover{
+   background-color: $black;  
+color: $white ;
+}
+
+.myfav:checked,.myfav:hover {
+    color:#cd0000 ;
+       background-color: transparent; 
+
+}
+

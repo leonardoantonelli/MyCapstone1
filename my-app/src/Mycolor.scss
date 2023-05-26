@@ -4,8 +4,12 @@ $greye : #4b5043;
 $blue : #9bc4bc;
 $azzure :#d3ffe9;
 $white : #f1fbfc;
- 
+$shop :#F6F6F6;
 
+ 
+.myBgShop{
+   background-color: $shop;
+}
 
 .myBluBg {
   background-color: $blue;

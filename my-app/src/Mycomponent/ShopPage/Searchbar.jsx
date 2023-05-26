@@ -1,34 +1,14 @@
-import React, { useState } from "react";
-import url from "../../assets/json.json";
-import ShoesCard from "./Shoescard";
-import { Button, Col, Form, Row } from "react-bootstrap";
+import React from "react";
 
-const Searchbar = () => {
-  const [search, setSearch] = useState("nike");
-  console.log(search);
-
+const SearchBar = ({ keyword, setKeyword }) => {
   return (
-    <>
-      <Form.Group>
-        <Form.Label>Search a book</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Search here"
-          value={this.state.searchQuery}
-          onChange={(e) => this.setState({ searchQuery: e.target.value })}
-        />
-      </Form.Group>
-      <Row>
-        {this.props.shoes
-          .filter((s) => s.title.toLowerCase().includes(this.state.searchQuery))
-          .map((sh) => (
-            <Col xs={12} md={4} key={sh.Id}>
-              <ShoesCard />
-            </Col>
-          ))}
-      </Row>
-    </>
+    <input
+      key="random1"
+      value={keyword}
+      placeholder={"cerca scarpa"}
+      onChange={(e) => setKeyword(e.target.value)}
+    />
   );
 };
 
-export default Searchbar;
+export default SearchBar;
