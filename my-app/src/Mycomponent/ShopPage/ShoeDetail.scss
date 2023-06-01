@@ -47,3 +47,52 @@ color: $white ;
 
 }
 
+.rotatebutton{
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+    left: -30%;
+         background-color: transparent; 
+           border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+color: $black;
+   width:489px;
+   opacity:50%;
+   font-size: 900px;
+:hover{
+    background-color: $black;  
+color: $white ;
+}
+}
+
+
+.buttontag{
+  clip-path: polygon(0% 0%, 100% 14%, 100% 75%, 69% 75%, 43% 100%, 50% 75%, 0% 75%);
+  height: 60px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color:$black ;
+    color: $blue;
+  
+}
+.buttontag:hover{
+    background-color:$azzure !important ;
+    color: $black !important ;
+  }
+
+  .buttoninvisibile{
+    display: none;
+    border: #090909;
+  }
+
+  .imgcart{
+    height: 100px;
+  }
+  .imgslider{
+  height: 200px;
+  }
+  .widbutt{
+    width: 15px;
+  }

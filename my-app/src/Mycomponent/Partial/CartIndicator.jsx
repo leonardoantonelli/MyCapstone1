@@ -2,6 +2,7 @@ import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import "./Partial.scss";
 
 const CartIndicator = () => {
   const navigate = useNavigate();
@@ -12,10 +13,10 @@ const CartIndicator = () => {
   return (
     <div className="text-end mt-3 mb-4">
       <Button
-        className="d-inline-flex align-items-center py-2 px-3 myWhiteBg text-dark border-0 "
+        className="d-inline-flex align-items-center py-2 px-3 border-0 myindicator "
         onClick={() => navigate("/cart")}
       >
-        <FaShoppingCart className="myTextBlack" />
+        <FaShoppingCart className="" />
         <span className="ms-2">{cartLength}</span>
       </Button>
     </div>

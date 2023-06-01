@@ -4,16 +4,16 @@ $greye : #4b5043;
 $blue : #9bc4bc;
 $azzure :#d3ffe9;
 $white : #f1fbfc;
- 
-.width100{
+ $yellow : #D3B306;
+
+ .width100{
   width: 100vh !important;
 }
 
 
 *{
   font-family: 'Poppins', sans-serif ;
-  
-}
+  }
 
 body{
   display: flex;
@@ -94,3 +94,21 @@ body{
 .cardcontainer{
     overflow: hidden !important;
 }
+
+
+.myboldTitle{
+ font-weight: 900;
+}
+
+
+
+.myboldSubTitle{
+ font-weight:700;
+ font-family: 'Rubik', sans-serif;
+}
+
+p{
+  font-family: 'Rubik', sans-serif;
+
+}
+

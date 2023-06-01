@@ -8,6 +8,9 @@ const initialState = {
   cart: {
     content: [],
   },
+  fav: {
+    content: [],
+  },
   shoeSelected: {
     content: null,
   },
@@ -42,6 +45,30 @@ const mainReducer = (state = initialState, action) => {
           // content: state.cart.content.splice(action.payload, 1) // NO!!! muta l'array originale e ritorna l'oggetto dell'elemento eliminato
           // prenderemo il precedente state.cart.content, lo filtreremo prendendo in considerazione l'indice "i", o action.payload in questo caso, del singolo elemento cliccato in Cart
           content: state.cart.content.filter((_, i) => i !== action.payload),
+          // content: [...state.cart.content.slice(0, action.payload), ...state.cart.content.slice(action.payload + 1)] // spread dell'array con tutti gli elementi prima di action.payload, e spread degli elementi dopo action.payload
+        },
+      };
+
+    case "ADD_TO_FAV":
+      return {
+        ...state,
+        fav: {
+          ...state.fav,
+          //content: state.cart.content.push(action.payload) // ASSOLUTAMENTE NO!!! push è un metodo che muta l'array originario (nelle funzioni pure non si può fare),
+          // ma ritorna anche un valore che per noi è solo dannoso, ossia: la length del nuovo array, sostituendo l'array originario per un numero.... poco utile
+
+          // content: state.cart.content.concat(action.payload) // Sì
+          content: [...state.fav.content, action.payload],
+        },
+      };
+    case "REMOVE_FROM_FAV":
+      return {
+        ...state,
+        fav: {
+          ...state.cart,
+          // content: state.cart.content.splice(action.payload, 1) // NO!!! muta l'array originale e ritorna l'oggetto dell'elemento eliminato
+          // prenderemo il precedente state.cart.content, lo filtreremo prendendo in considerazione l'indice "i", o action.payload in questo caso, del singolo elemento cliccato in Cart
+          content: state.fav.content.filter((_, i) => i !== action.payload),
           // content: [...state.cart.content.slice(0, action.payload), ...state.cart.content.slice(action.payload + 1)] // spread dell'array con tutti gli elementi prima di action.payload, e spread degli elementi dopo action.payload
         },
       };

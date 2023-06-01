@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import "./ShoeDetail.scss";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import Instruction from "./Istruction";
+import "../../Mycolor.scss";
 const ShoeDetail = () => {
   const dispatch = useDispatch();
   const shoeSelected = useSelector((state) => state.shoeSelected.content);
@@ -14,13 +16,16 @@ const ShoeDetail = () => {
         <>
           {" "}
           <div classname="d-flex justify-content-center ">
-            <h3> {shoeSelected.Name}</h3>
+            <h3 className=" d-flex justify-content-center myboldTitle fs-1 mt-3 ">
+              {" "}
+              {shoeSelected.Name}
+            </h3>
           </div>
           <div className="position-relative">
             <img src={shoeSelected.Img} alt="" className="w-100" />
-            <Button className="position-absolute top-0 start-0">
+            <h6 className="position-absolute rotatebutton fs-1 fst-italic myboldSubTitle myTextBlu ">
               {shoeSelected.Tag}{" "}
-            </Button>
+            </h6>
             <div
               className="d-flex justify-content-center align-items-center
             position-absolute bottom-0 end-0"
@@ -38,7 +43,12 @@ const ShoeDetail = () => {
             </div>
             <Button className="position-absolute top-0 end-0 myfav ">
               {" "}
-              <AiOutlineHeart className="fs-3" />
+              <AiOutlineHeart
+                className="fs-3"
+                onClick={() => {
+                  dispatch({ type: "ADD_TO_FAV", payload: shoeSelected });
+                }}
+              />
             </Button>{" "}
             <div class="size d-flex justify-content-center align-items-center position-absolute bottom-0 start-0">
               <h3>Size :</h3>
@@ -51,9 +61,7 @@ const ShoeDetail = () => {
         </>
       ) : (
         <Row>
-          <Col sm={12}>
-            <h3 className="display-6">👈non hai cliccato nulla</h3>
-          </Col>
+          <Instruction />
         </Row>
       )}
     </Row>

@@ -2,6 +2,7 @@ import { Row, Col } from "react-bootstrap/";
 import url from "../../assets/json.json";
 import CardHomep from "./CardHomep";
 import "../../Mycomponent/Home/scss/CardHomepage.scss";
+import "../../Mycolor.scss";
 const FetchHomepage = () => {
   console.log(url);
   return (
@@ -13,12 +14,12 @@ const FetchHomepage = () => {
       {url.slice([20]).map((shoes) => {
         return (
           <Col
-            className=" d-flex align-items-center justify-content-center mycontainer"
+            className=" d-flex align-items-center justify-content-center mycontainer "
             xs={12}
             md={4}
             key={shoes.id}
           >
-            <div class="mycard fade-in-bottom">
+            <div class="mycard fade-in-bottom myshadow">
               <div class="myimgBx">
                 <img className="myimg" fluid src={shoes.Img} alt="" />
               </div>

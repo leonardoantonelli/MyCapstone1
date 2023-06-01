@@ -1,12 +1,15 @@
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../assets/adidas logo.png";
-
 import { BrowserRouter, Switch, Route, Link, Routes } from "react-router-dom";
 import CartIndicator from "./CartIndicator";
 import Cart from "../ShopPage/Cart";
 import MyMainHomepage from "../Home/MyMainHomepage";
 import Shop from "../ShopPage/Shop";
 import About from "../About/About";
+
+import FavIndicator from "./FavIndicator";
+import Fav2 from "../FavPage/Fav2";
+import Fav from "../FavPage/Fav";
 function MyNavbar() {
   return (
     <>
@@ -26,7 +29,8 @@ function MyNavbar() {
                 About{" "}
               </h5>
             </Link>
-            <CartIndicator />{" "}
+            <CartIndicator />
+            <FavIndicator />
           </div>
         </Navbar>
         <hr className="myWhiteBg myTextWhite w-100 my-0 py-0" />
@@ -35,6 +39,7 @@ function MyNavbar() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
+          <Route path="/fav" element={<Fav2 />} />
         </Routes>
       </BrowserRouter>
     </>

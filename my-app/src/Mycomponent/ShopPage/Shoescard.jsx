@@ -6,6 +6,7 @@ import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import ShoeDetail from "./ShoeDetail";
+import "../../Mycolor.scss";
 
 const ShoesCard = ({ shoe }) => {
   const shoeSelected = useSelector((state) => state.shoeSelected.content);
@@ -32,7 +33,13 @@ const ShoesCard = ({ shoe }) => {
             src={shoe.Img}
             className="position-relative imghover"
           />{" "}
-          <Button className="text-bg-dark border-3 position-absolute top-0 end-0 border-0">
+          <Button
+            className={`${
+              shoeSelected?.Tag === ""
+                ? " d-none"
+                : " position-absolute top-0 end-0 border-0 buttontag"
+            }`}
+          >
             {shoe.Tag}{" "}
           </Button>
         </div>
@@ -41,9 +48,10 @@ const ShoesCard = ({ shoe }) => {
 
           <Button
             className={`${
-              shoeSelected?.id === shoe.id ? "border-primary" : ""
+              shoeSelected?.id === shoe.id
+                ? " myTextBlack myTextBlu border-0"
+                : "myTextAzzure myBlackBg border-0"
             }`}
-            variant="primary"
             onClick={() => dispatch({ type: "SELECT_SHOE", payload: shoe })}
           >
             Dettaglio

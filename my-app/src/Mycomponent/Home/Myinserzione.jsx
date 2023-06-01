@@ -1,5 +1,6 @@
 import { Row, Col } from "react-bootstrap/";
 import imghp from "../../assets/shoe.png";
+import "../../Mycolor.scss";
 const Myinserzione = () => {
   return (
     <Row className="height-wh">
@@ -8,12 +9,12 @@ const Myinserzione = () => {
         lg={4}
         className="d-flex flex-column justify-content-center align-items-center mx-5 px-5 "
       >
-        <h1 className="d-flex myTextWhite justify-content-center text-center align-items-center ">
+        <h1 className="d-flex myboldTitle myTextWhite justify-content-center text-center align-items-center ">
           {" "}
           SHOP YOUR DREAM
         </h1>
-        <h5 className="myTextBlu py-2"> SOTTOTITOLO</h5>
-        <p className=" d-flex justify-content-center align-content-center ">
+        <h5 className=" py-2 myboldSubTitle myTextYellow"> SOTTOTITOLO</h5>
+        <p className=" d-flex justify-content-center align-content-center myTextWhite ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
           fugit dolores. Quas beatae nihil voluptates tempora quaerat. Aperiam
           rerum dolores veniam est quo commodi, soluta odio consequatur natus!

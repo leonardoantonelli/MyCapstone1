@@ -5,10 +5,17 @@ $blue : #9bc4bc;
 $azzure :#d3ffe9;
 $white : #f1fbfc;
 $shop :#F6F6F6;
+ $yellow : #D3B306;
 
+ .myTextYellow{
+ color:  $yellow ;
+ }
  
 .myBgShop{
    background-color: $shop;
+}
+.myTextGrey{
+  color: $greye;
 }
 
 .myBluBg {
