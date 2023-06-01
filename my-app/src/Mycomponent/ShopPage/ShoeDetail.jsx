@@ -11,7 +11,7 @@ const ShoeDetail = () => {
   // useDispatch ci ritorna la funzione che avvierà, quando chiamata (con l'action), avvierà il processo di modifica dello Store
 
   return (
-    <Row sticky="top" className="mt-3 mb-4 mb-lg-0 myBgShop d-flex myBgShop">
+    <Row className="mt-3 mb-4 mb-lg-0 myBgShop d-flex myBgShop">
       {shoeSelected ? (
         <>
           {" "}
@@ -61,7 +61,7 @@ const ShoeDetail = () => {
         </>
       ) : (
         <Row>
-          <Instruction />
+          <Instruction sticky="top" />
         </Row>
       )}
     </Row>
