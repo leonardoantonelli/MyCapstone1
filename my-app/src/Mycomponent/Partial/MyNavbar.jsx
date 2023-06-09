@@ -34,7 +34,18 @@ function MyNavbar() {
             </Link>
             <CartIndicator />
             <FavIndicator />
-            <LoginIndicator />
+            <Link to="/login" className="text-decoration-none">
+              <h5 className="text-decoration-none myTextWhite px-3 mx-3">
+                {" "}
+                Login
+              </h5>
+            </Link>
+            <Link to="/register" className="text-decoration-none">
+              <h5 className="text-decoration-none myTextWhite px-3 mx-3">
+                {" "}
+                Register
+              </h5>
+            </Link>
           </div>
         </Navbar>
         <hr className="myWhiteBg myTextWhite w-100 my-0 py-0" />
@@ -44,7 +55,7 @@ function MyNavbar() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/fav" element={<Fav2 />} />
-          <Route path="/login" element={<RegisterPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
