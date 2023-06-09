@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 const Slider = () => {
   return (
     <>
-      <Row className="">
+      <Row className="d-md-none">
         <Col>
           <SlideCard />
         </Col>

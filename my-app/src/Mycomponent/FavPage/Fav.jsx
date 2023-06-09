@@ -2,12 +2,17 @@ import { Col, Row, Button, ListGroup } from "react-bootstrap";
 import { FaTrash, FaShoppingCart } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import AnimatedPage from "../Animationpage/AnimatedPage ";
+import { useNavigate } from "react-router-dom";
 
 const Fav = () => {
   const fav = useSelector((state) => state.fav.content);
   const dispatch = useDispatch();
   // cart sarà l'array contenuto in state.cart.content
 
+  let navigate = useNavigate;
+  const ButtonShop = () => {
+    navigate("http://localhost:3000/shop");
+  };
   return (
     <AnimatedPage>
       <Row className="">
@@ -58,7 +63,7 @@ const Fav = () => {
                     Quando aggiungerai il primo prodotto al carrello, apparirà
                     qui. Inizia ad esplorare!
                   </h5>
-                  <Button>Inizia</Button>
+                  <Button onClick={ButtonShop()}>Inizia</Button>
 
                   <Row> </Row>
                 </ListGroup.Item>

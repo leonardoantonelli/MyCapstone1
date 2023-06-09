@@ -6,6 +6,7 @@ const SearchBar = ({ keyword, setKeyword }) => {
       key="random1"
       value={keyword}
       placeholder={"cerca scarpa"}
+      className="w-100"
       onChange={(e) => setKeyword(e.target.value)}
     />
   );

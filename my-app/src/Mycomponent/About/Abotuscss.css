@@ -1,0 +1,12 @@
+.myrounded-pill {
+  border-radius: 120px;
+}
+
+.mycircle {
+  -webkit-clip-path: circle(50.5% at 79% 27%);
+          clip-path: circle(50.5% at 79% 27%);
+}
+
+.height-100 {
+  height: 100vh;
+}/*# sourceMappingURL=Abotuscss.css.map */

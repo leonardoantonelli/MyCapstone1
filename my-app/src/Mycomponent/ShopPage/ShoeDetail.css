@@ -1,0 +1,112 @@
+.size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px 4px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.size span:hover {
+  background: #090909;
+  color: white;
+}
+
+.mybutton, .myfav {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #090909;
+}
+
+.mybutton:hover {
+  background-color: #090909;
+  color: #f1fbfc;
+}
+
+.myfav:checked, .myfav:hover {
+  color: #cd0000;
+  background-color: transparent;
+}
+
+.rotatebutton {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+  left: -30%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #090909;
+  width: 489px;
+  opacity: 50%;
+  font-size: 900px;
+}
+.rotatebutton :hover {
+  background-color: #090909;
+  color: #f1fbfc;
+}
+
+.buttontag {
+  -webkit-clip-path: polygon(0% 0%, 100% 14%, 100% 75%, 69% 75%, 43% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 14%, 100% 75%, 69% 75%, 43% 100%, 50% 75%, 0% 75%);
+  height: 60px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #090909;
+  color: #9bc4bc;
+}
+
+.buttontag:hover {
+  background-color: #d3ffe9 !important;
+  color: #090909 !important;
+}
+
+.buttoninvisibile {
+  display: none;
+  border: #090909;
+}
+
+.imgcart {
+  height: 100px;
+}
+
+.imgslider {
+  height: 200px;
+}
+
+.widbutt {
+  width: 15px;
+}
+
+.dimensioni {
+  height: 60px;
+  width: 100px;
+  top: 312px;
+}
+
+.pdimensione {
+  top: 302px;
+}
+
+.path {
+  content: "";
+  -webkit-clip-path: polygon(48% 14%, 39% 41%, 100% 41%, 100% 61%, 38% 60%, 46% 87%, 0% 50%);
+          clip-path: polygon(48% 14%, 39% 41%, 100% 41%, 100% 61%, 38% 60%, 46% 87%, 0% 50%);
+}
+.mysticky {
+  position: sticky !important;
+  top: 0;
+}/*# sourceMappingURL=ShoeDetail.css.map */

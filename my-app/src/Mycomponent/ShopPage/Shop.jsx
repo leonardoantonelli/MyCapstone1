@@ -40,7 +40,7 @@ const Shop = () => {
     <>
       <AnimatedPage>
         <Container className="h-100">
-          <h1 className="d-flex justify-content-center align-content-center">
+          <h1 className="d-flex justify-content-center align-content-center fs-bold myTextWhite">
             {" "}
             Tutte le scarpe
           </h1>

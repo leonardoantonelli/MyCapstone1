@@ -13,10 +13,10 @@ const FavIndicator = () => {
   return (
     <div className="text-end mt-3 mb-4">
       <Button
-        className="d-inline-flex align-items-center py-2 px-3 myWhiteBg text-dark border-0 "
+        className="d-inline-flex align-items-center py-2 px-3 myindicator border-0 "
         onClick={() => navigate("/fav")}
       >
-        <AiOutlineHeart className="myTextBlack" />
+        <AiOutlineHeart className="" />
         <span className="ms-2">{favLength}</span>
       </Button>
     </div>

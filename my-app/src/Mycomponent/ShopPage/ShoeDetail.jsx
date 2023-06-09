@@ -11,10 +11,9 @@ const ShoeDetail = () => {
   // useDispatch ci ritorna la funzione che avvierà, quando chiamata (con l'action), avvierà il processo di modifica dello Store
 
   return (
-    <Row className="mt-3 mb-4 mb-lg-0 myBgShop d-flex myBgShop">
+    <Row className="mt-3 mb-4 mb-lg-0 myBgShop d-flex myBgShop mysticky">
       {shoeSelected ? (
         <>
-          {" "}
           <div classname="d-flex justify-content-center ">
             <h3 className=" d-flex justify-content-center myboldTitle fs-1 mt-3 ">
               {" "}
@@ -60,8 +59,8 @@ const ShoeDetail = () => {
           </div>
         </>
       ) : (
-        <Row>
-          <Instruction sticky="top" />
+        <Row className="mysticky">
+          <Instruction />
         </Row>
       )}
     </Row>

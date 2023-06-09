@@ -108,11 +108,10 @@ color: $white ;
   .path{
     content: "";
 clip-path: polygon(48% 14%, 39% 41%, 100% 41%, 100% 61%, 38% 60%, 46% 87%, 0% 50%); 
-transform: 
-    -webkit-animation-name: prop-600;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
+ 
+  
 }
+
 @-webkit-keyframes prop-600 {
     0% {
         -webkit-transform: translateX(0px);
@@ -122,4 +121,9 @@ transform:
     100% {
          -webkit-transform: translateX(0px)
     }
+}
+
+.mysticky{
+  position: sticky !important;
+   top: 0;
 }

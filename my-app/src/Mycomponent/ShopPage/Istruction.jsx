@@ -7,7 +7,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const Instruction = () => {
   return (
     <>
-      <Col className="position-relative" sm={12}>
+      <Col className="position-relative " sm={12}>
         <div>
           <div className="path myBluBg position-absolute translate-middle dimensioni ">
             {" "}

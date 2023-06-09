@@ -10,6 +10,9 @@ import About from "../About/About";
 import FavIndicator from "./FavIndicator";
 import Fav2 from "../FavPage/Fav2";
 import Fav from "../FavPage/Fav";
+import LoginIndicator from "./LoginIndicator";
+import LoginPage from "../LoginPage/LoginPage";
+import RegisterPage from "../RegisterPage/RegisterPage";
 function MyNavbar() {
   return (
     <>
@@ -31,6 +34,7 @@ function MyNavbar() {
             </Link>
             <CartIndicator />
             <FavIndicator />
+            <LoginIndicator />
           </div>
         </Navbar>
         <hr className="myWhiteBg myTextWhite w-100 my-0 py-0" />
@@ -40,6 +44,8 @@ function MyNavbar() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
           <Route path="/fav" element={<Fav2 />} />
+          <Route path="/login" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </>
