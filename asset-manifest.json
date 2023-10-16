@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/MyCapstone1/static/css/main.b872c31f.css",
+    "main.js": "/MyCapstone1/static/js/main.519e4ff4.js",
+    "static/js/787.28cb0dcd.chunk.js": "/MyCapstone1/static/js/787.28cb0dcd.chunk.js",
+    "static/media/bello-uomo-che-presenta-qualcosa.png": "/MyCapstone1/static/media/bello-uomo-che-presenta-qualcosa.5ac1b8d274e37224c2a3.png",
+    "static/media/BB_19556b0b-4a29-4092-9824-94b481b38e0a_preview.mp4": "/MyCapstone1/static/media/BB_19556b0b-4a29-4092-9824-94b481b38e0a_preview.a06077b9795a056d463d.mp4",
+    "static/media/business-company-management-organization-team-png-favpng-wp3Q1b13bEzFLX4dVqdbsw478.png": "/MyCapstone1/static/media/business-company-management-organization-team-png-favpng-wp3Q1b13bEzFLX4dVqdbsw478.1cf872de57c40ddae0a9.png",
+    "static/media/shoe.png": "/MyCapstone1/static/media/shoe.971bb4ba90de7e9789bf.png",
+    "static/media/visa-amex-master-klarna-pp-ap_tcm213-806063.webp": "/MyCapstone1/static/media/visa-amex-master-klarna-pp-ap_tcm213-806063.a998b8d7898975f95c99.webp",
+    "static/media/slick.svg": "/MyCapstone1/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/MyCapstone1/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/MyCapstone1/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/MyCapstone1/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/MyCapstone1/index.html",
+    "main.b872c31f.css.map": "/MyCapstone1/static/css/main.b872c31f.css.map",
+    "main.519e4ff4.js.map": "/MyCapstone1/static/js/main.519e4ff4.js.map",
+    "787.28cb0dcd.chunk.js.map": "/MyCapstone1/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b872c31f.css",
+    "static/js/main.519e4ff4.js"
+  ]
+}
