@@ -50,7 +50,7 @@ const Login = () => {
           />
         </div>
         <div className="d-flex justify-content-center align-items-center">
-          <button type="submit" className="w-50 ">
+          <button type="submit" className="w-50 text-dark fw-bold ">
             Log In
           </button>{" "}
         </div>

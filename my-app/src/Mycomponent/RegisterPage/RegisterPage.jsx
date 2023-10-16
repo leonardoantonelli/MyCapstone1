@@ -13,8 +13,8 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="auth-form-container">
-      <h2>Register</h2>
+    <div className="auth-form-container myTextWhite">
+      <h2 className="myTextWhite">Register</h2>
       <form className="register-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Full name</label>
         <input
@@ -41,8 +41,12 @@ const RegisterPage = () => {
           placeholder="********"
           id="password"
           name="password"
-        />
-        <button type="submit">Registrati</button>
+        />{" "}
+        <div className="d-flex justify-content-center align-items-center">
+          <button type="submit" className="text-dark w-50 fw-bold">
+            Registrati
+          </button>
+        </div>
       </form>
       <button className="link-btn">Already have an account? Login here.</button>
     </div>

@@ -34,8 +34,8 @@ const Fav = () => {
                   </Col>
                   <Col className=" d-flex flex-column justify-content-center align-content-center">
                     {" "}
-                    <h5> {shoe.Name}</h5>
-                    <p>{shoe.Price} $</p>
+                    <h5 className=" myTextWhite"> {shoe.Name}</h5>
+                    <p className=" myTextWhite">{shoe.Price} $</p>
                   </Col>
                   <Col
                     s={1}

@@ -30,7 +30,9 @@ function CardHomep(shoes) {
                 <span></span>
                 <span></span>
               </div>
-              <a href="#">Buy Now</a>
+              <a href="#" className="mx-2 py-2">
+                Buy Now
+              </a>
             </div>
           </div>
         </Col>

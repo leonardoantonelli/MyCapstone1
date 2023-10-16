@@ -11,7 +11,7 @@ const Myinserzione = () => {
       >
         <h1 className="d-flex myboldTitle myTextWhite justify-content-center text-center align-items-center ">
           {" "}
-          SHOP YOUR DREAM
+          SHOP YOUR DRE
         </h1>
         <h5 className=" py-2 myboldSubTitle myTextYellow"> SOTTOTITOLO</h5>
         <p className=" d-flex justify-content-center align-content-center myTextWhite ">

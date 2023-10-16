@@ -14,17 +14,6 @@ const Cart = () => {
       <Row lg={12} className="width100">
         <Col sm={12} className="mb-5">
           <Col sm={12} className="font-weight-bold mb-5 ms-3">
-            TOTAL:{" "}
-            <span className="display-6 text-primary">
-              {cart
-                .reduce(
-                  (accumulator, currentValue) =>
-                    accumulator + parseFloat(currentValue.price),
-                  0
-                )
-                .toFixed(2)}
-              $
-            </span>
             {cart.length > 0 ? (
               cart.map((shoe, i) => (
                 <Row
@@ -41,8 +30,8 @@ const Cart = () => {
                   </Col>
                   <Col className=" d-flex flex-column justify-content-center align-content-center">
                     {" "}
-                    <h5> {shoe.Name}</h5>
-                    <p>{shoe.Price} $</p>
+                    <h5 className=" myTextWhite"> {shoe.Name}</h5>
+                    <p className=" myTextWhite">{shoe.Price} $</p>
                   </Col>
                   <Col
                     s={1}

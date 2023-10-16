@@ -34,7 +34,9 @@ const FetchHomepage = () => {
                   <span>10</span>
                 </div>
 
-                <a href="#">Buy Now</a>
+                <a href="#" className="my-2 py-2">
+                  Buy Now
+                </a>
               </div>
             </div>
           </Col>
